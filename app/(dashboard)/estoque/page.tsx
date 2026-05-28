@@ -1,9 +1,9 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import { motos, type MotoStatus } from "@/lib/mock-data"
-import { Search, Plus, Filter, Bike } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
+import { Search, Plus, Bike } from "lucide-react"
 
 const statusConfig: Record<MotoStatus, { label: string; cls: string }> = {
   disponivel: { label: "Disponível", cls: "bg-emerald-50 text-emerald-700 border-emerald-100" },
@@ -91,11 +91,22 @@ export default function EstoquePage() {
               key={moto.id}
               className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-orange-200 hover:shadow-sm transition-all group cursor-pointer"
             >
-              {/* Foto placeholder */}
               <div className="h-40 bg-slate-900 flex items-center justify-center relative overflow-hidden">
-                <Bike size={48} className="text-orange-500/40" />
+                {moto.foto ? (
+                  <Image
+                    src={moto.foto}
+                    alt={`${moto.marca} ${moto.modelo} ${moto.ano}`}
+                    fill
+                    sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    priority={moto.id === "1"}
+                  />
+                ) : (
+                  <Bike size={48} className="text-orange-500/40" />
+                )}
+                <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/45 to-transparent" />
                 <span
-                  className={`absolute top-2.5 right-2.5 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${st.cls}`}
+                  className={`absolute top-2.5 right-2.5 text-[10px] font-semibold px-2 py-0.5 rounded-full border shadow-sm ${st.cls}`}
                 >
                   {st.label}
                 </span>

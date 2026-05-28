@@ -84,7 +84,7 @@ export const motos: Moto[] = [
     status: "disponivel",
     precoCusto: 18500,
     precoVenda: 22900,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=CB+300R",
+    foto: "/motos/cb-300r.png",
     createdAt: "2026-04-10",
   },
   {
@@ -100,7 +100,7 @@ export const motos: Moto[] = [
     status: "disponivel",
     precoCusto: 32000,
     precoVenda: 38500,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=MT-07",
+    foto: "/motos/mt-07.png",
     createdAt: "2026-04-15",
   },
   {
@@ -116,7 +116,7 @@ export const motos: Moto[] = [
     status: "reservada",
     precoCusto: 26000,
     precoVenda: 31200,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=Z400",
+    foto: "/motos/z400.png",
     createdAt: "2026-04-20",
   },
   {
@@ -132,7 +132,7 @@ export const motos: Moto[] = [
     status: "disponivel",
     precoCusto: 7800,
     precoVenda: 10500,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=CG+160",
+    foto: "/motos/cg-160-fan.png",
     createdAt: "2026-04-25",
   },
   {
@@ -148,7 +148,7 @@ export const motos: Moto[] = [
     status: "vendida",
     precoCusto: 10200,
     precoVenda: 14000,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=Fazer+250",
+    foto: "/motos/fazer-250.png",
     createdAt: "2026-03-01",
   },
   {
@@ -164,7 +164,7 @@ export const motos: Moto[] = [
     status: "em_conserto",
     precoCusto: 28500,
     precoVenda: 34000,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=GSX-S750",
+    foto: "/motos/gsx-s750.png",
     createdAt: "2026-05-01",
   },
   {
@@ -180,7 +180,7 @@ export const motos: Moto[] = [
     status: "disponivel",
     precoCusto: 8900,
     precoVenda: 11200,
-    foto: "https://placehold.co/400x280/1e293b/f97316?text=Biz+125",
+    foto: "/motos/biz-125.png",
     createdAt: "2026-05-10",
   },
 ]
